@@ -1,0 +1,1 @@
+console.log('Powershell single-quote here-string works perfectly');

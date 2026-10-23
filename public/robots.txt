@@ -1,0 +1,14 @@
+# Googlebot & Search Engine Crawlers
+User-agent: *
+Allow: /
+Allow: /#/cars
+Allow: /#/engineering
+Allow: /#/reviews
+Allow: /#/auth
+Disallow: /admin
+Disallow: /#/admin
+Disallow: /api/
+
+# Host & Sitemap
+Sitemap: https://veloce-motors.com/sitemap.xml
+Host: https://veloce-motors.com

@@ -1,0 +1,18 @@
+{
+  "name": "VELOCE ATELIER | Bespoke Hypercars",
+  "short_name": "VELOCE",
+  "description": "Bespoke handcrafted hypercars sculpted for raw speed, motorsport carbon engineering, and private proving grounds.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020F06",
+  "theme_color": "#020F06",
+  "orientation": "portrait-primary",
+  "categories": ["lifestyle", "automotive", "luxury"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FA353F'%3E%3Cpolygon points='12 2 22 12 12 22 2 12'/%3E%3C/svg%3E",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

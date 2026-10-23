@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800&family=JetBrains+Mono:wght@400;500;700;800&family=Syncopate:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-black-green: #020F06;
+    --color-ruby-red: #FA353F;
+    --color-bg-base: #020F06;
+    --color-bg-surface: #061F10;
+    --color-bg-surface-hover: #0A2E19;
+    --color-bg-surface-glass: rgba(2, 15, 6, 0.85);
+    --color-ruby-base: #FA353F;
+    --color-ruby-glow: rgba(250, 53, 63, 0.4);
+    --color-ruby-subtle: rgba(250, 53, 63, 0.12);
+    --color-ruby-border: rgba(250, 53, 63, 0.3);
+    --color-ruby-hover: #FF4A54;
+    --color-text-primary: #F5FAF7;
+    --color-text-secondary: #98AEA3;
+    --color-text-tertiary: #526A55;
+    --color-border-subtle: rgba(152, 174, 163, 0.12);
+  }
+
+  body {
+    background-color: #020F06;
+    color: #F5FAF7;
+    font-family: 'Exo 2', sans-serif;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
+
+/* Completely hide browser scrollbar */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+.luxury-glass {
+  background: rgba(2, 15, 6, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(250, 53, 63, 0.22);
+}
+
+.luxury-glass-subtle {
+  background: rgba(6, 31, 16, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(152, 174, 163, 0.15);
+}
+
+.luxury-glass-red {
+  background: rgba(250, 53, 63, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(250, 53, 63, 0.4);
+}
+
+.ruby-text-glow {
+  text-shadow: 0 0 25px rgba(250, 53, 63, 0.75);
+}
+
+.dark-text-glow {
+  text-shadow: 0 0 20px rgba(2, 15, 6, 0.4);
+}
+
+/* ========================================================================= */
+/* LUXURY MOTION DESIGN TOKENS & UTILITIES */
+/* ========================================================================= */
+.page-transition-enter {
+  animation: pageReveal 320ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes pageReveal {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.luxury-card-hover {
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 250ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, box-shadow;
+}
+
+.luxury-card-hover:hover {
+  transform: translate3d(0, -6px, 0);
+  border-color: rgba(250, 53, 63, 0.65);
+  box-shadow: 0 20px 45px -12px rgba(250, 53, 63, 0.35);
+}
+
+.luxury-btn-hover {
+  transition: transform 180ms cubic-bezier(0.34, 1.25, 0.64, 1),
+              background-color 200ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 250ms cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.luxury-btn-hover:hover {
+  transform: translate3d(0, -1.5px, 0) scale(1.015);
+  box-shadow: 0 0 30px rgba(250, 53, 63, 0.45);
+}
+
+.luxury-btn-hover:active {
+  transform: translate3d(0, 1px, 0) scale(0.975);
+}
+
+.telemetry-pulse {
+  animation: telemetryPulse 2.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes telemetryPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px rgba(250, 53, 63, 0.7));
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(0.96);
+    filter: drop-shadow(0 0 2px rgba(250, 53, 63, 0.2));
+  }
+}
+
+@keyframes radarPing {
+  0% {
+    r: 14;
+    opacity: 0.8;
+  }
+  100% {
+    r: 32;
+    opacity: 0;
+  }
+}
+
+.radar-wave {
+  animation: radarPing 2.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+

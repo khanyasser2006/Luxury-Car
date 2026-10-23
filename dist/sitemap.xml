@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://veloce-motors.com/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&amp;fit=crop&amp;w=1400&amp;q=85</image:loc>
+      <image:title>Veloce Apex Nero GT Twin-Turbo Hybrid Hypercar</image:title>
+      <image:caption>Bespoke handcrafted hypercars sculpted for speed and circuit dominance.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://veloce-motors.com/#/cars</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&amp;fit=crop&amp;w=1400&amp;q=85</image:loc>
+      <image:title>Veloce Valkyrie Stradale Cosworth V12</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=1400&amp;q=85</image:loc>
+      <image:title>Veloce Phantom Corsa All-Electric Hypercar</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://veloce-motors.com/#/engineering</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&amp;fit=crop&amp;w=1400&amp;q=85</image:loc>
+      <image:title>Motorsport Carbon Monocoque &amp; Powertrain Architecture</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://veloce-motors.com/#/reviews</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://veloce-motors.com/#/auth</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
